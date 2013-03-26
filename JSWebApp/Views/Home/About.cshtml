@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+
+<div id="acordian">
+    <h3>Section One</h3>
+    <diw>
+        Hello
+    </diw>
+    <h3>Section TWo</h3>
+    <div>Help</div>
+</div>
+<br />
+
+<div id="test"></div>
+<br />
+
+<div id="button">This is a button</div>
+
+@section scripts
+{
+<script type="text/javascript">
+    $(function () {
+        $('#acordian').accordion();
+
+        $('#test').slider()
+
+        $('#button').button().click(function () {
+            alert('Hello Guys');
+        });
+    });
+</script>
+}
